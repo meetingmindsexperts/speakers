@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
                 <label for="bio" class="form-label">Bio</label>
                 <textarea class="form-control" id="bio" rows="5" disabled><?php echo $row['bio']; ?></textarea>
             </div>
-            <a href="<?php echo $baseUrl; ?>/views/edit_profile_form.php" class="btn btn-primary">Edit Profile</a>
+            <a href="<?php echo $baseUrl; ?>/views/edit_profile_form.php?email=<?php echo $email; ?>" class="btn btn-primary">Edit Profile</a>
         </div>
     </div>
 </div>

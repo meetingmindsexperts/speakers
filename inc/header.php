@@ -3,6 +3,13 @@ include_once "db.php";
 include_once "functions.php";
 //include_once 'auth.php';
 
+// Check if the user is logged in
+if (!isset($_SESSION['email'])) {
+    $d_none = "d-none";
+} else {
+    $d_none = "d-flex";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +34,7 @@ include_once "functions.php";
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav ml-auto w-100 justify-content-end pe-lg-5">
+            <ul class="navbar-nav ml-auto w-100 justify-content-end pe-lg-5 <?php echo $d_none; ?>">
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $baseUrl; ?>/views/view_profile.php">View Profile</a>
                 </li>
@@ -36,7 +43,7 @@ include_once "functions.php";
                 </li>
                 
             </ul>
-            <div class="nav-item logout_btn">
+            <div class="nav-item logout_btn ms-auto">
                 <a class="btn btn-primary nav-divnk" href="<?php echo $baseUrl; ?>/logout.php">Logout</a>
             </div>
         </div>

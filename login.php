@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result->num_rows > 0) {
         // Email is registered, proceed to the form
         $_SESSION['email'] = $email;
-        header("Location: views/edit_profile_form.php?email=".$email."&action=edit");
+        header("Location: views/view_profile.php?email=".$email);
         exit;
     } else {
         // Email is not registered, register the user and proceed to the form
@@ -59,28 +59,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-<div class="container py-5 mt-5"> 
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <?php foreach ($errors as $error) { ?>
-                <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
-            <?php } ?>
-            <div class="text-start">
-                <!-- <img src="https://meetingmindsexperts.com/wp-content/uploads/2018/11/MME-WEB-LOGO-12-11-18.png" alt="logo" style="width: 185px;"> -->
-                <h4 class="mt-1 mb-5 pb-1">Meeting Minds Experts</h4>
-            </div>
-            <h2>Please enter Your Email to continue</h2>
-            <form action="" method="post">
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+<div class="login_page"> 
+    <div class="container py-5 mt-5"> 
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <?php foreach ($errors as $error) { ?>
+                    <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
+                <?php } ?>
+                <div class="text-start">
+                    <!-- <img src="https://meetingmindsexperts.com/wp-content/uploads/2018/11/MME-WEB-LOGO-12-11-18.png" alt="logo" style="width: 185px;"> -->
+                    <h4 class="mt-1 mb-5 pb-1">Meeting Minds Experts</h4>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <h2>Please enter Your Email to continue</h2>
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
-
 <?php
 // Include necessary files
 include_once 'inc/footer.php';
