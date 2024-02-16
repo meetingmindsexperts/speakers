@@ -18,6 +18,6 @@ jobs:
       with:
         server: ftp.meetingmindsexperts.com
         username: krishna@speakers.meetingmindsexperts.com
-        password: UJ=7aweeAB$y
+        password: fafdLvO2QqV7
         remote-dir: 'public_html/speakers.meetingmindsexperts.com/'
         log-level: standard
