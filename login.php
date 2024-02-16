@@ -68,9 +68,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php } ?>
                 <div class="text-start">
                     <!-- <img src="https://meetingmindsexperts.com/wp-content/uploads/2018/11/MME-WEB-LOGO-12-11-18.png" alt="logo" style="width: 185px;"> -->
-                    <h4 class="mt-1 mb-5 pb-1">Meeting Minds Experts</h4>
+                    <h1 class="mt-1 mb-5 pb-1">Welcome!</h1>
                 </div>
-                <h2>Please enter Your Email to continue</h2>
+                <h4>Please enter Your Email to continue</h4>
                 <form action="" method="post">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>

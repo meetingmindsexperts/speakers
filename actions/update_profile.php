@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 
     // Redirect back to the form page
-    header("Location: ../views/profile_form.php?email=".$email);
+    header("Location: ../views/view_profile.php?email=".$email);
     exit();
 }
 

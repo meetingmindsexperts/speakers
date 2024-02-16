@@ -43,7 +43,7 @@ if (!isset($_SESSION['email'])) {
                 </li>
                 
             </ul>
-            <div class="nav-item logout_btn ms-auto">
+            <div class="nav-item logout_btn ms-auto <?php echo $d_none; ?>">
                 <a class="btn btn-primary nav-divnk" href="<?php echo $baseUrl; ?>/logout.php">Logout</a>
             </div>
         </div>
