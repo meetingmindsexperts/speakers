@@ -11,7 +11,7 @@ include_once "functions.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speakers</title>
-    <link rel="icon" type="image/x-icon" href="../assets/meeting_minds_experts_logo.jpeg">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <!-- Include custom styles -->
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/style.css">

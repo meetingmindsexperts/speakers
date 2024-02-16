@@ -1,5 +1,5 @@
 
-name: Deploy to FTP DTCM-csv.
+name: Deploy to FTP Speakers.MME
 on:
   push:
     branches:
