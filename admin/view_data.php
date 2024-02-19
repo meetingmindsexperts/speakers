@@ -1,6 +1,6 @@
 <?php
 // Include necessary files
-include_once '../inc/auth.php'; // Ensure the user is authenticated as an admin
+include_once 'auth.php'; // Ensure the user is authenticated as an admin
 include_once '../inc/db.php'; // Include database connection
 include_once '../inc/header.php'; // Include header
 

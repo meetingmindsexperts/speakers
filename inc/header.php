@@ -1,6 +1,5 @@
 <?php 
 include_once "db.php";
-include_once "functions.php";
 //include_once 'auth.php';
 
 // Check if the user is logged in
@@ -22,6 +21,8 @@ if (!isset($_SESSION['email'])) {
 
     <!-- Include custom styles -->
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -43,7 +44,7 @@ if (!isset($_SESSION['email'])) {
                 </li>
                 
             </ul>
-            <div class="nav-item logout_btn ms-auto <?php echo $d_none; ?>">
+            <div class="nav-item logout_btn ms-auto">
                 <a class="btn btn-primary nav-divnk" href="<?php echo $baseUrl; ?>/logout.php">Logout</a>
             </div>
         </div>

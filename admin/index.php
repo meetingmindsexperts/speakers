@@ -1,6 +1,6 @@
 <?php
 
-include_once '../inc/auth.php';
+include_once 'admin-auth.php';
 
 include_once '../inc/header.php';
 
